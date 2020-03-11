@@ -93,16 +93,16 @@ $(document).ready(function($) {
 
 	var burgerMenu = function() {
 
-		$('.js-colorlib-nav-toggle').on('click', function(event) {
+		$('.js-sourcing-nav-toggle').on('click', function(event) {
 			event.preventDefault();
 			var $this = $(this);
 			if( $('body').hasClass('menu-show') ) {
 				$('body').removeClass('menu-show');
-				$('#colorlib-main-nav > .js-colorlib-nav-toggle').removeClass('show');
+				$('#sourcing-main-nav > .js-sourcing-nav-toggle').removeClass('show');
 			} else {
 				$('body').addClass('menu-show');
 				setTimeout(function(){
-					$('#colorlib-main-nav > .js-colorlib-nav-toggle').addClass('show');
+					$('#sourcing-main-nav > .js-sourcing-nav-toggle').addClass('show');
 				}, 900);
 			}
 		})
